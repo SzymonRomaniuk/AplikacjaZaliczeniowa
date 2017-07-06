@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podaj Lokalizacje"
+        android:id="@+id/przycisk"
+
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz Lokalizacje pierwszą"
+
+        android:id="@+id/przycisk1"
+
+
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/przycisk"
+        android:layout_alignStart="@+id/przycisk" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porównaj Odległość"
+        android:id="@+id/przycisk2"
+
+
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/przycisk15"
+        android:layout_alignStart="@+id/przycisk1" />
+
+
+    <LinearLayout
+        android:id="@+id/layButtonH"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_weight="0.15">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layloadingH"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_below="@+id/przycisk2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp">
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/przycisk2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"></ProgressBar>
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="#006400"
+        android:editable="false"
+        android:layout_below="@+id/progressBar1"
+        android:layout_alignParentStart="true">
+
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <Button
+        android:id="@+id/przycisk15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz Lokalizacje drugą"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@+id/przycisk1"
+        android:layout_alignStart="@+id/przycisk2"
+        android:layout_alignEnd="@+id/przycisk1" />
+
+
+</RelativeLayout>
